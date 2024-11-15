@@ -1,0 +1,32 @@
+.filter-sidebar {
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+    border-right: 1px solid #ddd;
+}
+
+.filter-section {
+    margin-bottom: 1rem;
+}
+
+.filter-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+.clear-filter-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4682B4;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filter-sidebar {
+        border-right: none;
+        padding: 0.5rem;
+    }
+}

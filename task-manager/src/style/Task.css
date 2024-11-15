@@ -1,0 +1,117 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    flex: 0.5;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.task-description {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.task-feature {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-priority {
+    font-size: 0.9em;
+    color: #f57c00;
+}
+
+.task-duedate {
+    font-size: 0.9em;
+    color: #757575;
+}
+
+.task-button {
+    padding: 5px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.edit-btn {
+    background-color: #2196f3;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.completed-btn {
+    background-color: #4caf50;
+}
+
+.incomplete-btn {
+    background-color: #d32f2f;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .task-item {
+        margin: 8px 0;
+    }
+    
+    .task-details {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
+    
+    .task-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 0.5rem;
+    }
+    
+    .task-feature {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .task-button {
+        padding: 0.5rem;
+        font-size: 0.9em; /* Added font-size for mobile */
+        color: white;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+    }
+}
